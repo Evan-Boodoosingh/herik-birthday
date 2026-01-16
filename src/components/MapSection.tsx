@@ -390,9 +390,12 @@ export function MapSection() {
               {/* Photo */}
               <motion.div
                 whileHover={{
-                  scale: 1.05,
-                  rotate: isMobile ? 0 : index % 2 === 0 ? 2 : -2,
+                  scale: 1.08,
+                  rotate: isMobile ? 0 : index % 2 === 0 ? 3 : -3,
+                  boxShadow: "0 0 50px rgba(255, 111, 0, 0.5)",
+                  transition: { duration: 0.3 },
                 }}
+                whileTap={{ scale: 0.98 }}
                 onClick={() => setSelectedMilestone(milestone)}
                 className="w-72 h-96 md:w-80 md:h-[28rem] rounded-lg overflow-hidden border-4 border-orange-500/40 shadow-[0_0_30px_rgba(255,111,0,0.3)] cursor-pointer bg-[#2d1810] group"
               >
@@ -400,17 +403,17 @@ export function MapSection() {
                   <img
                     src={milestone.imageUrl}
                     alt={milestone.title}
-                    className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                    className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
                   />
-                  <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors" />
-                  <div className="absolute bottom-0 left-0 right-0 p-4 bg-linear-to-t from-[#2d1810] via-[#2d1810]/80 to-transparent">
-                    <div className="text-orange-400 text-sm font-semibold mb-1">
+                  <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-300" />
+                  <div className="absolute bottom-0 left-0 right-0 p-4 bg-linear-to-t from-[#2d1810] via-[#2d1810]/80 to-transparent transform translate-y-2 group-hover:translate-y-0 transition-transform duration-300">
+                    <div className="text-orange-400 text-sm font-semibold mb-1 transition-colors duration-300 group-hover:text-orange-300">
                       {milestone.year}
                     </div>
-                    <div className="text-[#f4e8d0] text-sm">
+                    <div className="text-[#f4e8d0] text-sm transition-colors duration-300 group-hover:text-white">
                       {milestone.title}
                     </div>
-                    <div className="text-[#f4e8d0]/60 text-xs mt-1 opacity-0 group-hover:opacity-100 transition-opacity">
+                    <div className="text-[#f4e8d0]/60 text-xs mt-1 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                       Click to view
                     </div>
                   </div>

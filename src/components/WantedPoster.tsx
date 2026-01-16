@@ -4,8 +4,14 @@ import { motion } from "motion/react";
 export function WantedPoster() {
   return (
     <motion.div
-      whileHover={{ scale: 1.05, rotate: 2 }}
-      className="relative w-[32rem] bg-[#f4e8d0] p-6 shadow-2xl border-4 border-[#8b6f47] rounded-sm"
+      whileHover={{
+        scale: 1.05,
+        rotate: 2,
+        boxShadow:
+          "0 25px 50px -12px rgba(0, 0, 0, 0.5), 0 0 40px rgba(255, 111, 0, 0.3)",
+        transition: { duration: 0.3 },
+      }}
+      className="relative w-[32rem] bg-[#f4e8d0] p-6 shadow-2xl border-4 border-[#8b6f47] rounded-sm cursor-pointer"
       style={{
         backgroundImage: "linear-gradient(to bottom, #f4e8d0 0%, #e8d5b7 100%)",
       }}

@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import { Anchor } from "lucide-react";
+import { motion } from "motion/react";
 
 interface NavbarProps {
   isMenuOpen: boolean;
@@ -23,34 +24,44 @@ function Navbar({ isMenuOpen, setIsMenuOpen }: NavbarProps) {
       <div className="px-6">
         <div className="flex items-center justify-between h-14">
           {/* Home Button */}
-          <button
+          <motion.button
             onClick={() => scrollToSection("home")}
-            className="flex items-center gap-2 text-orange-500 hover:text-orange-400 hover:bg-orange-500/10 px-4 py-2 rounded-full transition-all duration-300"
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+            className="flex items-center gap-2 text-orange-500 hover:text-orange-400 hover:bg-orange-500/10 px-4 py-2 rounded-full transition-all duration-300 hover:shadow-[0_0_20px_rgba(255,111,0,0.3)] cursor-pointer"
           >
-            <Anchor className="w-5 h-5" />
+            <motion.div whileHover={{ rotate: 12 }} transition={{ duration: 0.2 }}>
+              <Anchor className="w-5 h-5" />
+            </motion.div>
             <span className="font-medium hidden md:inline">Home</span>
-          </button>
+          </motion.button>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-2">
-            <button
+            <motion.button
               onClick={() => scrollToSection("grand-line")}
-              className="text-[#f4e8d0] text-md font-medium hover:text-orange-400 hover:bg-orange-500/10 px-4 py-2 rounded-full transition-all duration-300"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              className="text-[#f4e8d0] text-md font-medium hover:text-orange-400 hover:bg-orange-500/10 px-4 py-2 rounded-full transition-all duration-300 hover:shadow-[0_0_15px_rgba(255,111,0,0.2)] cursor-pointer"
             >
               Grand Line
-            </button>
-            <button
+            </motion.button>
+            <motion.button
               onClick={() => scrollToSection("logbook")}
-              className="text-[#f4e8d0] text-md font-medium hover:text-orange-400 hover:bg-orange-500/10 px-4 py-2 rounded-full transition-all duration-300"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              className="text-[#f4e8d0] text-md font-medium hover:text-orange-400 hover:bg-orange-500/10 px-4 py-2 rounded-full transition-all duration-300 hover:shadow-[0_0_15px_rgba(255,111,0,0.2)] cursor-pointer"
             >
               Logbook
-            </button>
-            <button
+            </motion.button>
+            <motion.button
               onClick={() => scrollToSection("treasure")}
-              className="text-[#f4e8d0] text-md font-medium hover:text-orange-400 hover:bg-orange-500/10 px-4 py-2 rounded-full transition-all duration-300"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              className="text-[#f4e8d0] text-md font-medium hover:text-orange-400 hover:bg-orange-500/10 px-4 py-2 rounded-full transition-all duration-300 hover:shadow-[0_0_15px_rgba(255,111,0,0.2)] cursor-pointer"
             >
               Treasure
-            </button>
+            </motion.button>
           </div>
         </div>
       </div>

@@ -170,12 +170,14 @@ export function TreasureReveal() {
                   onClick={(e) => e.stopPropagation()}
                 >
                   {/* Close button */}
-                  <button
+                  <motion.button
                     onClick={() => setIsOpen(false)}
+                    whileHover={{ scale: 1.1, rotate: 90 }}
+                    whileTap={{ scale: 0.9 }}
                     className="absolute top-4 right-4 z-10 p-2 bg-[#2d1810] rounded-full border-2 border-orange-500/50 hover:border-orange-500 hover:bg-[#3d2820] transition-all shadow-lg"
                   >
                     <X className="w-6 h-6 text-orange-500" />
-                  </button>
+                  </motion.button>
 
                   {/* Decorative corners */}
                   <div className="absolute top-0 left-0 w-8 h-8 border-t-4 border-l-4 border-orange-500 -translate-x-2 -translate-y-2" />
@@ -218,14 +220,21 @@ export function TreasureReveal() {
                     className="mt-8 max-w-md mx-auto"
                   >
                     {/* GIFT IMAGE PLACEHOLDER - EASY TO REPLACE */}
-                    <div className="relative overflow-hidden rounded-sm border-2 border-orange-500/30">
+                    <motion.div
+                      className="relative overflow-hidden rounded-sm border-2 border-orange-500/30"
+                      whileHover={{
+                        scale: 1.02,
+                        boxShadow: "0 0 30px rgba(255, 111, 0, 0.4)",
+                      }}
+                      transition={{ duration: 0.3 }}
+                    >
                       <img
                         src="https://images.unsplash.com/photo-1632809199725-72a4245e846b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx0cmVhc3VyZSUyMGNoZXN0JTIwZ29sZHxlbnwxfHx8fDE3Njg0MTc1NjB8MA&ixlib=rb-4.1.0&q=80&w=1080"
                         alt="Gift Reveal"
-                        className="w-full h-64 object-cover"
+                        className="w-full h-64 object-cover transition-transform duration-300 hover:scale-105"
                       />
                       <div className="absolute inset-0 bg-linear-to-t from-orange-500/30 to-transparent" />
-                    </div>
+                    </motion.div>
                     <p className="text-center text-xs text-[#f4e8d0]/50 mt-2 tracking-wider uppercase">
                       Replace with your gift image
                     </p>

@@ -18,11 +18,11 @@ export function TestimonialCard({ testimonial, index }: TestimonialCardProps) {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ duration: 0.6, delay: index * 0.1 }}
-      whileHover={{ y: -8, transition: { duration: 0.3 } }}
+      whileHover={{ y: -8, scale: 1.02, transition: { duration: 0.3 } }}
       className="relative group"
     >
-      <div className="h-full p-6 bg-[#2d1810]/50 backdrop-blur-sm border border-orange-500/20 rounded-sm transition-all duration-300 group-hover:border-orange-500/60 group-hover:shadow-[0_0_30px_rgba(255,111,0,0.2)]">
-        <div className="text-5xl text-orange-500/30 font-serif leading-none mb-3">
+      <div className="h-full p-6 bg-[#2d1810]/50 backdrop-blur-sm border border-orange-500/20 rounded-sm transition-all duration-300 group-hover:border-orange-500/60 group-hover:shadow-[0_0_30px_rgba(255,111,0,0.2)] group-hover:bg-[#2d1810]/70">
+        <div className="text-5xl text-orange-500/30 font-serif leading-none mb-3 group-hover:text-orange-500/50 transition-colors duration-300">
           "
         </div>
 

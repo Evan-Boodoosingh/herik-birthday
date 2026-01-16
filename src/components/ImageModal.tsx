@@ -39,13 +39,15 @@ export function ImageModal({
           onClick={(e) => e.stopPropagation()}
         >
           {/* Close button */}
-          <button
+          <motion.button
             onClick={onClose}
+            whileHover={{ scale: 1.1, rotate: 90 }}
+            whileTap={{ scale: 0.9 }}
             className="absolute z-20 p-2 bg-[#2d1810] rounded-full border-2 border-orange-500/50 hover:border-orange-500 hover:bg-[#3d2820] transition-all shadow-lg"
             style={{ right: "1rem", top: "1rem" }}
           >
             <X className="w-6 h-6 text-orange-500" />
-          </button>
+          </motion.button>
 
           {/* Image Container */}
           <div className="bg-[#1a0f0a] p-6 flex items-center justify-center overflow-auto">
@@ -53,7 +55,7 @@ export function ImageModal({
               src={imageUrl}
               alt={title}
               className="max-w-full h-auto object-contain rounded"
-              style={{ maxHeight: 'calc(90vh - 200px)' }}
+              style={{ maxHeight: "calc(90vh - 200px)" }}
             />
           </div>
 
