@@ -30,7 +30,10 @@ function Navbar({ isMenuOpen, setIsMenuOpen }: NavbarProps) {
             whileTap={{ scale: 0.95 }}
             className="flex items-center gap-2 text-orange-500 hover:text-orange-400 hover:bg-orange-500/10 px-4 py-2 rounded-full transition-all duration-300 hover:shadow-[0_0_20px_rgba(255,111,0,0.3)] cursor-pointer"
           >
-            <motion.div whileHover={{ rotate: 12 }} transition={{ duration: 0.2 }}>
+            <motion.div
+              whileHover={{ rotate: 12 }}
+              transition={{ duration: 0.2 }}
+            >
               <Anchor className="w-5 h-5" />
             </motion.div>
             <span className="font-medium hidden md:inline">Home</span>
