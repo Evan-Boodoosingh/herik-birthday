@@ -79,7 +79,7 @@ export function WantedPoster() {
             40,000,000
           </div>
           <div className="text-xs tracking-widest" style={{ color: "#2d1810" }}>
-            YEARS OF LEGENDARY ADVENTURES
+            BERRY BOUNTY REWARD
           </div>
         </div>
 

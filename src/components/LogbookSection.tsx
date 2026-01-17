@@ -51,7 +51,8 @@ export function LogbookSection() {
       date: "Igloo Fest Montreal - January 2025",
       content:
         "One of my favorite memories with Herik is when we went to Igloo Fest in Montreal together. It was freezing cold, but dancing under the stars with him made it one of the warmest nights of my life.",
-      imageUrl: pg2025,
+      imageUrl:
+        "https://images.unsplash.com/photo-1604580826271-aa59d10b875a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxvY2VhbiUyMHdhdmVzJTIwc3Vuc2V0fGVufDF8fHx8MTc2ODQ2MDUzNXww&ixlib=rb-4.1.0&q=80&w=1080",
       fullStory:
         "One of my favorite memories with Herik is when we went to Igloo Fest in Montreal together. It was freezing cold, but dancing under the stars with him made it one of the warmest nights of my life. The music, the energy, and being wrapped up in each other made everything perfect. I'll never forget how he held me close to keep me warm while we danced the night away.",
     },
@@ -61,8 +62,7 @@ export function LogbookSection() {
       date: "Big Night Live",
       content:
         "Remember that time at Big Night Live when we almost got into a fight? Classic Herik energy - always ready to defend his crew.",
-      imageUrl:
-        "https://images.unsplash.com/photo-1604580826271-aa59d10b875a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxvY2VhbiUyMHdhdmVzJTIwc3Vuc2V0fGVufDF8fHx8MTc2ODQ2MDUzNXww&ixlib=rb-4.1.0&q=80&w=1080",
+      imageUrl: pg2025,
       fullStory:
         "Remember that time at Big Night Live when we almost got into a fight? That was peak cousin energy right there. You had my back without even thinking twice. That's what I love about you - you're always ready to stand up for your crew. We didn't need to throw punches that night because just having you there was enough. Love you, cuz.",
     },

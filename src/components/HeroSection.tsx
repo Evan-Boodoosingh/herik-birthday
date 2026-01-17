@@ -5,7 +5,6 @@ import { JollyRoger } from "./JollyRoger";
 import { TypewriterText } from "./TypewriterText";
 import { HeroSubtitle } from "./HeroSubtitle";
 import { WantedPoster } from "./WantedPoster";
-import { ScrollIndicator } from "./ScrollIndicator";
 
 export function HeroSection() {
   const [showSubtitle, setShowSubtitle] = useState(false);
@@ -74,8 +73,6 @@ export function HeroSection() {
             </motion.div>
           )}
         </AnimatePresence>
-
-        {isComplete && <ScrollIndicator />}
       </div>
     </section>
   );
