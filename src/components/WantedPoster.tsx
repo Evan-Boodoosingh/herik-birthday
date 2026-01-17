@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "motion/react";
+import wantedPhoto from "../assets/wanted.jpg";
 
 export function WantedPoster() {
   return (
@@ -41,17 +42,12 @@ export function WantedPoster() {
         </div>
 
         {/* Photo placeholder */}
-        <div className="w-full h-64 bg-[#2d1810]/20 border-4 border-[#2d1810] mb-4 flex items-center justify-center">
-          <p
-            className="text-[#2d1810] text-center px-4 text-sm"
-            style={{ fontFamily: "serif" }}
-          >
-            [REPLACE WITH HERIK'S PHOTO]
-            <br />
-            <span className="text-xs">
-              Drag and drop your best mugshot here!
-            </span>
-          </p>
+        <div className="w-full h-64 bg-[#2d1810]/20 border-4 border-[#2d1810] mb-4 overflow-hidden">
+          <img
+            src={wantedPhoto}
+            alt="Herik's Wanted Photo"
+            className="w-full h-full object-cover grayscale sepia"
+          />
         </div>
 
         {/* Name */}

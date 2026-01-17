@@ -6,6 +6,7 @@ import { SectionHeader } from "./SectionHeader";
 import { TestimonialCard } from "./TestimonialCard";
 import { StoryCard } from "./StoryCard";
 import jandyBday2023 from "../assets/Jandy-bday-2023.jpeg";
+import pg2025 from "../assets/pg-2025.jpg";
 
 export function LogbookSection() {
   const [selectedStory, setSelectedStory] = React.useState<number | null>(null);
@@ -20,17 +21,16 @@ export function LogbookSection() {
     },
     {
       id: 2,
-      author: "TESTIMONIAL_2_AUTHOR",
-      role: "TESTIMONIAL_2_ROLE",
+      author: "Alli",
+      role: "Girlfriend",
       content:
-        "[INSERT_TESTIMONIAL_HERE] - Add another special memory or message here.",
+        "He's my home, my safe space, and my best friend. He challenges me to be a better person and makes every day an adventure. I'm so grateful to celebrate you and all that you bring to this world.",
     },
     {
       id: 3,
-      author: "TESTIMONIAL_3_AUTHOR",
-      role: "TESTIMONIAL_3_ROLE",
-      content:
-        "[INSERT_TESTIMONIAL_HERE] - Share another story or celebration message.",
+      author: "Tory",
+      role: "Best Friend",
+      content: "Fuck you",
     },
   ];
 
@@ -47,25 +47,24 @@ export function LogbookSection() {
     },
     {
       id: 2,
-      title: "STORY_2_TITLE",
-      date: "STORY_2_DATE",
+      title: "Dancing Under the Northern Lights",
+      date: "Igloo Fest Montreal - January 2025",
       content:
-        "[INSERT_STORY_HERE] - Replace this with your second memorable story or adventure.",
-      imageUrl:
-        "https://images.unsplash.com/photo-1545450648-d105ad7a1e65?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx0cm9waWNhbCUyMGlzbGFuZCUyMGFlcmlhbHxlbnwxfHx8fDE3Njg1MDM5MzN8MA&ixlib=rb-4.1.0&q=80&w=1080",
+        "One of my favorite memories with Herik is when we went to Igloo Fest in Montreal together. It was freezing cold, but dancing under the stars with him made it one of the warmest nights of my life.",
+      imageUrl: pg2025,
       fullStory:
-        "[INSERT_FULL_STORY_HERE] - Add the complete version of this story with all the details, emotions, and memorable moments that make it special.",
+        "One of my favorite memories with Herik is when we went to Igloo Fest in Montreal together. It was freezing cold, but dancing under the stars with him made it one of the warmest nights of my life. The music, the energy, and being wrapped up in each other made everything perfect. I'll never forget how he held me close to keep me warm while we danced the night away.",
     },
     {
       id: 3,
-      title: "STORY_3_TITLE",
-      date: "STORY_3_DATE",
+      title: "Brothers in Arms",
+      date: "Big Night Live",
       content:
-        "[INSERT_STORY_HERE] - Replace this with your third memorable story or adventure.",
+        "Remember that time at Big Night Live when we almost got into a fight? Classic Herik energy - always ready to defend his crew.",
       imageUrl:
         "https://images.unsplash.com/photo-1604580826271-aa59d10b875a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxvY2VhbiUyMHdhdmVzJTIwc3Vuc2V0fGVufDF8fHx8MTc2ODQ2MDUzNXww&ixlib=rb-4.1.0&q=80&w=1080",
       fullStory:
-        "[INSERT_FULL_STORY_HERE] - Add the complete version of this story with all the details, emotions, and memorable moments that make it special.",
+        "Remember that time at Big Night Live when we almost got into a fight? That was peak cousin energy right there. You had my back without even thinking twice. That's what I love about you - you're always ready to stand up for your crew. We didn't need to throw punches that night because just having you there was enough. Love you, cuz.",
     },
   ];
 

@@ -219,8 +219,8 @@ export function MapSection() {
   // Generate consistent zigzag positions with pixel-based spacing
   const positions = milestones.map((_, index) => {
     // Spread photos vertically with consistent spacing (increased for larger photos)
-    // Start first photo below title (350px on mobile, 500px on desktop)
-    const yPos = isMobile ? 350 + index * 450 : 500 + index * 520;
+    // Start first photo below title (250px on mobile, 500px on desktop)
+    const yPos = isMobile ? 250 + index * 450 : 500 + index * 520;
     // On mobile, center all photos; on desktop, alternate left and right with equal spacing from edges
     const xPos = isMobile ? 50 : index % 2 === 0 ? 30 : 70;
     return { x: xPos, y: yPos };
