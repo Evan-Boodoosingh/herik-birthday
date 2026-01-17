@@ -35,7 +35,7 @@ export function HeroSection() {
           <JollyRoger />
         </motion.div>
 
-        <div className="relative mb-4">
+        <div className="relative mb-2">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}

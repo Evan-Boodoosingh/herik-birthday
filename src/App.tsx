@@ -6,16 +6,15 @@ import { LogbookSection } from "./components/LogbookSection";
 import { TreasureReveal } from "./components/TreasureReveal";
 import { BirthdayBanner } from "./components/BirthdayBanner";
 import { FloatingParticles, NavCompass } from "./components/OnePieceElements";
-import Navbar from "./components/Navbar";
+import { UnifiedNav } from "./components/UnifiedNav";
 
 export default function App() {
   const { scrollYProgress } = useScroll();
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
     <div className="min-h-screen bg-[#2d1810] text-white overflow-x-hidden">
-      {/* Navbar */}
-      <Navbar isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
+      {/* Navigation */}
+      <UnifiedNav />
 
       {/* Parchment texture overlay */}
       <div className="fixed inset-0 opacity-30 pointer-events-none mix-blend-multiply">

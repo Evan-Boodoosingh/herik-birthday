@@ -219,8 +219,8 @@ export function MapSection() {
   // Generate consistent zigzag positions with pixel-based spacing
   const positions = milestones.map((_, index) => {
     // Spread photos vertically with consistent spacing (increased for larger photos)
-    // Start first photo below title (500px to appear clearly underneath)
-    const yPos = isMobile ? 500 + index * 450 : 500 + index * 520;
+    // Start first photo below title (350px on mobile, 500px on desktop)
+    const yPos = isMobile ? 350 + index * 450 : 500 + index * 520;
     // On mobile, center all photos; on desktop, alternate left and right with equal spacing from edges
     const xPos = isMobile ? 50 : index % 2 === 0 ? 30 : 70;
     return { x: xPos, y: yPos };
@@ -233,18 +233,18 @@ export function MapSection() {
   return (
     <section
       ref={containerRef}
-      className="relative mt-32 pt-48 pb-8 md:mt-40 md:pt-56 md:pb-12 overflow-x-hidden"
+      className="relative mt-16 pt-24 pb-8 md:mt-40 md:pt-56 md:pb-12 overflow-x-hidden"
       style={{ height: `${sectionHeight}px` }}
     >
-      <div className="relative w-full h-full overflow-x-hidden pt-32 md:pt-40">
+      <div className="relative w-full h-full overflow-x-hidden pt-16 md:pt-40">
         {/* Spacer for title */}
-        <div className="h-20 md:h-24"></div>
+        <div className="h-12 md:h-24"></div>
 
         {/* Title */}
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
-          className="sticky top-40 md:top-44 z-30 mb-20 w-full flex justify-center"
+          className="sticky top-40 md:top-44 z-30 mb-12 w-full flex justify-center"
         >
           <h2 className="text-3xl md:text-4xl font-light tracking-wider text-center">
             <span
