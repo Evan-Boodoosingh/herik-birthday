@@ -10,6 +10,7 @@ import pg2025 from "../assets/pg-2025.jpg";
 import alliMemory from "../assets/alli_memory.jpeg";
 import jamieMemory from "../assets/jamie-memory.jpeg";
 import jandiMemory from "../assets/jandi-memory.jpeg";
+import temMemory from "../assets/tem-memory.JPG";
 
 export function LogbookSection() {
   const [selectedStory, setSelectedStory] = React.useState<number | null>(null);
@@ -42,6 +43,20 @@ export function LogbookSection() {
       role: "Best Friend",
       content:
         "I know im probably the biggest shit talker but im just hiding behind the amount of love I have for this dude. Through all the bullshit, im blessed the army brought us together since 2012. Lucky to call him my big brother and best friend for life. Love you BIIITTTCCHHHH!! RIP E-40",
+    },
+    {
+      id: 5,
+      author: "Tem",
+      role: "Best Friend",
+      content:
+        "E is the most caring SOFT BITCH of them all and I love her for that. She really knows how to be a protector. Ever since she started painting her nails I just knew. I knew before that but she's taking baby steps. I'm just waiting for her to come out the closet……………… I'll  wait as long as you need to feel comfortable Erik with an H.",
+    },
+    {
+      id: 6,
+      author: "Jandy",
+      role: "Best Friend",
+      content:
+        "E is da big brother I've never had. He is a soft teddy bear and da biggest pain in my ass. Jkjk  he motivates me to get my shit together but also so free and caring and down for anything. He's an energizer bunny and is always can keep going and going lol People gravitate towards him and he is a social butterfly/rubber ducky lol there's so many other great things i can write down that sums up our 12 years of friendship but the one thing that sticks out the most is his big heart and loving caring loyal character. I Will always love him like ohana cuz he is and will roast his ass too!! Happy birthday ya old fart.",
     },
   ];
 
@@ -85,6 +100,16 @@ export function LogbookSection() {
       imageUrl: jamieMemory,
       fullStory:
         "Other than the time I bet E $50 that he couldn't do a backflip on the trampoline and he failed miserably (never forget)…my most favorite memory that I seriously hold closest to my heart is at PG last year. We had a heart to heart, cried then thugged it out, he showed me unconditional love and reassured me that he would love me no matter what, would always support me and just wants me to be happy. That's one of the many qualities I love about E, and how much he can make anyone feel welcomed and loved no matter what. Thank you for always being a safe space for me bro, love you fr fr",
+    },
+    {
+      id: 5,
+      title: "Legendary Squat",
+      date: "Gym Session",
+      content:
+        "My favorite memory is when he hid unknown substances up his butt…….. I mean my favorite memory is when he decided to Squat 300lbs like it was nothing. Congrats to him he did….. but at what cost.",
+      imageUrl: temMemory,
+      fullStory:
+        "My favorite memory is when he hid unknown substances up his butt…….. I mean my favorite memory is when he decided to Squat 300lbs like it was nothing. Congrats to him he did….. but at what cost. We know the ending to that story, I don't want to traumatize you buddy. That was legendary! - yours truly Tem",
     },
   ];
 

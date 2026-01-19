@@ -9,14 +9,20 @@ import lasVegas2018 from "../assets/LAS-VEGAS-2018.JPG";
 import japan2019 from "../assets/japan-jan-2019.jpg";
 import paris2022 from "../assets/Paris-2022.jpeg";
 import leLouvre2022 from "../assets/The-Le_Louvere-2022.jpeg";
+import edcVegas2022 from "../assets/EDC-VEGAS-2022-WITH-THE-BOYS.JPG";
 import edcOrlando2022 from "../assets/EDC-ORLANDO-2022.jpeg";
 import edcVegas2023 from "../assets/EDC-VEGAS-2023.jpeg";
 import jandyBday2023 from "../assets/Jandy-bday-2023.jpeg";
 import karaokeHawaii2023 from "../assets/Karaoke-in-Hawaii-2023.jpg";
-import fayetteville2014 from "../assets/Fayetteville-2014.jpeg";
+import fayetteville2012 from "../assets/Fayetteville-2012.jpeg";
+import snapchat2012 from "../assets/SNAPCHAT(2012).png";
+import youreGonnaGetHurt2012 from "../assets/youre_gonna_get_hurt-2012.jpeg";
 import edcOrlando2014 from "../assets/EDC-ORLANDO-2014.jpeg";
+import fiftyBucksBackflip2016 from "../assets/50_bucks_you_cant_do_a_backflip-2016.jpeg";
+import iCanSquatHim2016 from "../assets/I_can_squat_him-2016.jpeg";
 import fayetteville2015A from "../assets/Fayetteville--2015.jpeg";
 import fayetteville2015B from "../assets/Fayetteville_2015.jpeg";
+import roadTripGeorgia2015 from "../assets/ROAD-TRIP-TO-GEORGIA-2015.jpeg";
 import ace2024 from "../assets/ace2024.jpg";
 import drunk2024 from "../assets/drunk-2024.jpg";
 import lostLands2024 from "../assets/Lost-Lands-2024.jpg";
@@ -66,27 +72,41 @@ export function MapSection() {
   const milestones: Milestone[] = [
     {
       id: 1,
+      year: "2012",
+      title: "Fayetteville",
+      description: "Early adventures and memories.",
+      imageUrl: fayetteville2012,
+    },
+    {
+      id: 2,
+      year: "2012",
+      title: "Snapchat Days",
+      description: "No wonder they got banned from Snapchat.",
+      imageUrl: snapchat2012,
+    },
+    {
+      id: 3,
+      year: "2012",
+      title: "You're Gonna Get Hurt",
+      description: "Living dangerously and loving it.",
+      imageUrl: youreGonnaGetHurt2012,
+    },
+    {
+      id: 4,
       year: "2014",
       title: "EDC Orlando",
       description: "Electric Daisy Carnival in Orlando.",
       imageUrl: edcOrlando2014,
     },
     {
-      id: 2,
-      year: "2014",
-      title: "Fayetteville",
-      description: "Early adventures and memories.",
-      imageUrl: fayetteville2014,
-    },
-    {
-      id: 3,
+      id: 5,
       year: "2015",
       title: "April 2015",
       description: "Spring memories and good times.",
       imageUrl: april2015,
     },
     {
-      id: 4,
+      id: 6,
       year: "2015",
       title: "EDCO Orlando",
       description:
@@ -94,161 +114,189 @@ export function MapSection() {
       imageUrl: edco2015,
     },
     {
-      id: 5,
+      id: 7,
       year: "2015",
       title: "Fayetteville",
       description: "More good times in Fayetteville.",
       imageUrl: fayetteville2015A,
     },
     {
-      id: 6,
+      id: 8,
       year: "2015",
       title: "Fayetteville Adventures",
       description: "Continuing the journey.",
       imageUrl: fayetteville2015B,
     },
     {
-      id: 7,
+      id: 9,
       year: "2015",
       title: "Foam Party Fayetteville",
       description: "Epic foam party vibes.",
       imageUrl: fayettevilleFoam2015,
     },
     {
-      id: 8,
+      id: 10,
+      year: "2015",
+      title: "Road Trip to Georgia",
+      description: "Adventures on the open road.",
+      imageUrl: roadTripGeorgia2015,
+    },
+    {
+      id: 11,
+      year: "2016",
+      title: "$50 Backflip Challenge",
+      description: "$50 bucks you can't do a backflip.",
+      imageUrl: fiftyBucksBackflip2016,
+    },
+    {
+      id: 12,
+      year: "2016",
+      title: "I Can Squat Him",
+      description: "Showing off those gains.",
+      imageUrl: iCanSquatHim2016,
+    },
+    {
+      id: 13,
       year: "2018",
       title: "Las Vegas",
       description: "Vegas adventures with the crew.",
       imageUrl: lasVegas2018,
     },
     {
-      id: 9,
+      id: 14,
       year: "2019",
       title: "Japan Adventure",
       description: "Exploring the beauty and culture of Japan.",
       imageUrl: japan2019,
     },
     {
-      id: 10,
+      id: 15,
       year: "2022",
       title: "Paris",
       description: "The city of lights and unforgettable memories.",
       imageUrl: paris2022,
     },
     {
-      id: 11,
+      id: 16,
       year: "2022",
       title: "The Louvre",
       description: "Discovering art and history in Paris.",
       imageUrl: leLouvre2022,
     },
     {
-      id: 12,
+      id: 17,
+      year: "2022",
+      title: "EDC Vegas With The Boys",
+      description: "Epic times under the electric sky with the crew.",
+      imageUrl: edcVegas2022,
+    },
+    {
+      id: 18,
       year: "2022",
       title: "EDC Orlando",
       description: "Electric Daisy Carnival in Orlando.",
       imageUrl: edcOrlando2022,
     },
     {
-      id: 13,
+      id: 19,
       year: "2023",
       title: "EDC Las Vegas",
       description: "Electric energy under the Vegas sky.",
       imageUrl: edcVegas2023,
     },
     {
-      id: 14,
+      id: 20,
       year: "2023",
       title: "Jandy's Birthday",
       description: "Celebrating a special day with friends.",
       imageUrl: jandyBday2023,
     },
     {
-      id: 15,
+      id: 21,
       year: "2023",
       title: "Karaoke in Hawaii",
       description: "Singing our hearts out in paradise.",
       imageUrl: karaokeHawaii2023,
     },
     {
-      id: 16,
+      id: 22,
       year: "2024",
       title: "Ace",
       description: "Epic moments and unforgettable experiences.",
       imageUrl: ace2024,
     },
     {
-      id: 17,
+      id: 23,
       year: "2024",
       title: "Good Times",
       description: "Living life to the fullest.",
       imageUrl: drunk2024,
     },
     {
-      id: 18,
+      id: 24,
       year: "2024",
       title: "Lost Lands",
       description: "Epic festival vibes and amazing music.",
       imageUrl: lostLands2024,
     },
     {
-      id: 19,
+      id: 25,
       year: "2024",
       title: "San Diego",
       description: "California sunshine and good times.",
       imageUrl: sanDiego2024,
     },
     {
-      id: 20,
+      id: 26,
       year: "2025",
       title: "7s",
       description: "Adventures continue in 2025.",
       imageUrl: sevenS2025,
     },
     {
-      id: 21,
+      id: 27,
       year: "2025",
       title: "7s October",
       description: "Fall festivities and fun.",
       imageUrl: sevenSOct2025,
     },
     {
-      id: 22,
+      id: 28,
       year: "2025",
       title: "EDC Las Vegas",
       description: "Under the electric sky in Vegas.",
       imageUrl: edcVegas2025,
     },
     {
-      id: 23,
+      id: 29,
       year: "2025",
       title: "Frog",
       description: "Unique moments and memories.",
       imageUrl: frog2025,
     },
     {
-      id: 24,
+      id: 30,
       year: "2025",
       title: "Hawaii",
       description: "Paradise found on the islands.",
       imageUrl: hawaii2025,
     },
     {
-      id: 25,
+      id: 31,
       year: "2025",
       title: "Kaneohe Sandbar",
       description: "Beautiful waters and tropical vibes.",
       imageUrl: kaneoheHawaii2025,
     },
     {
-      id: 26,
+      id: 32,
       year: "2025",
       title: "PG",
       description: "More adventures and good times.",
       imageUrl: pg2025,
     },
     {
-      id: 27,
+      id: 33,
       year: "2025",
       title: "Wooli in Hawaii",
       description: "Epic music and island paradise.",
@@ -366,9 +414,9 @@ export function MapSection() {
 
           // Calculate when this photo should appear based on scroll progress
           const photoProgress = pos.y / sectionHeight;
-          // First photo starts visible immediately, others appear earlier in scroll
+          // First two photos start visible immediately, others appear earlier in scroll
           const baseOpacity =
-            index === 0
+            index === 0 || index === 1
               ? 1
               : useTransform(
                   scrollYProgress,
@@ -379,7 +427,7 @@ export function MapSection() {
                   [0, 1],
                 );
           const baseScale =
-            index === 0
+            index === 0 || index === 1
               ? 1
               : useTransform(
                   scrollYProgress,
@@ -427,6 +475,9 @@ export function MapSection() {
                 scale,
               }}
             >
+              {/* Background blocker for the line */}
+              <div className="absolute inset-0 -inset-4 bg-[#1a0f0a] rounded-lg z-10" />
+
               {/* Photo */}
               <motion.div
                 whileHover={{
@@ -437,7 +488,7 @@ export function MapSection() {
                 }}
                 whileTap={{ scale: 0.98 }}
                 onClick={() => setSelectedMilestone(milestone)}
-                className="w-72 h-96 md:w-80 md:h-[28rem] rounded-lg overflow-hidden border-4 border-orange-500/40 shadow-[0_0_30px_rgba(255,111,0,0.3)] cursor-pointer bg-[#2d1810] group"
+                className="relative w-72 h-96 md:w-80 md:h-[28rem] rounded-lg overflow-hidden border-4 border-orange-500/40 shadow-[0_0_30px_rgba(255,111,0,0.3)] cursor-pointer bg-[#2d1810] group z-30"
               >
                 <div className="relative w-full h-full">
                   <img

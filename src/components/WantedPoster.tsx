@@ -52,23 +52,11 @@ export function WantedPoster() {
 
         {/* Name */}
         <h4
-          className="text-center text-3xl mb-2 tracking-wide"
+          className="text-center text-6xl mb-6 tracking-wide"
           style={{ fontFamily: "serif", color: "#2d1810" }}
         >
           "HERIK"
         </h4>
-
-        {/* Epithet */}
-        <p
-          className="text-center text-sm mb-4 italic"
-          style={{ color: "#2d1810" }}
-        >
-          [Add his One Piece epithet/nickname here]
-          <br />
-          <span className="text-xs">
-            e.g., "The Unstoppable", "Master of...", etc.
-          </span>
-        </p>
 
         {/* Bounty */}
         <div className="text-center mb-4">
