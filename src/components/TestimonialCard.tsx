@@ -20,17 +20,33 @@ export function TestimonialCard({ testimonial, index }: TestimonialCardProps) {
       transition={{ duration: 0.6, delay: index * 0.1 }}
       whileHover={{ y: -8, scale: 1.02, transition: { duration: 0.3 } }}
       className="relative group"
+      style={{ height: "420px", width: "100%" }}
     >
-      <div className="h-full p-6 bg-[#2d1810]/50 backdrop-blur-sm border border-orange-500/20 rounded-sm transition-all duration-300 group-hover:border-orange-500/60 group-hover:shadow-[0_0_30px_rgba(255,111,0,0.2)] group-hover:bg-[#2d1810]/70">
+      <div
+        className="p-6 bg-[#2d1810]/50 backdrop-blur-sm border border-orange-500/20 rounded-sm transition-all duration-300 group-hover:border-orange-500/60 group-hover:shadow-[0_0_30px_rgba(255,111,0,0.2)] group-hover:bg-[#2d1810]/70"
+        style={{ height: "100%", display: "flex", flexDirection: "column" }}
+      >
         <div className="text-5xl text-orange-500/30 font-serif leading-none mb-3 group-hover:text-orange-500/50 transition-colors duration-300">
           "
         </div>
 
-        <p className="text-[#f4e8d0]/90 text-sm leading-relaxed mb-6 min-h-[120px]">
-          {testimonial.content}
-        </p>
+        <div
+          style={{
+            flex: "1 1 auto",
+            overflowY: "auto",
+            marginBottom: "16px",
+            minHeight: 0,
+          }}
+        >
+          <p className="text-[#f4e8d0]/90 text-sm leading-relaxed">
+            {testimonial.content}
+          </p>
+        </div>
 
-        <div className="border-t border-orange-500/30 pt-4">
+        <div
+          style={{ flexShrink: 0 }}
+          className="pt-4 border-t border-orange-500/30"
+        >
           <p className="text-orange-400 font-light">{testimonial.author}</p>
           <p className="text-[#f4e8d0]/50 text-xs tracking-wider uppercase">
             {testimonial.role}

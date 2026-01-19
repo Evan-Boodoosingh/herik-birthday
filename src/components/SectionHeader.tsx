@@ -17,14 +17,14 @@ export function SectionHeader({ title, subtitle }: SectionHeaderProps) {
       className="text-center mb-20"
     >
       <div className="flex justify-center items-center gap-4 mb-4">
-        <div className="h-px w-16 bg-linear-to-r from-transparent to-orange-500" />
+        <div className="h-px w-16 bg-gradient-to-r from-transparent to-orange-500" />
         <motion.div
           whileHover={{ rotate: [0, -10, 10, 0], scale: 1.1 }}
           transition={{ duration: 0.5 }}
         >
           <BookOpen className="w-10 h-10 text-orange-500" />
         </motion.div>
-        <div className="h-px w-16 bg-linear-to-l from-transparent to-orange-500" />
+        <div className="h-px w-16 bg-gradient-to-l from-transparent to-orange-500" />
       </div>
       <h2 className="text-4xl md:text-5xl font-light tracking-wider mb-4 text-[#f4e8d0]">
         <span

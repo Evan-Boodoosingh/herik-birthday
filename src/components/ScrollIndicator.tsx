@@ -24,7 +24,7 @@ export function ScrollIndicator() {
         <p className="text-xs text-[#f4e8d0]/60 tracking-[0.3em] uppercase group-hover:text-orange-400 transition-colors duration-300">
           Set Sail • Scroll Down
         </p>
-        <div className="w-px h-12 bg-linear-to-b from-orange-400 to-transparent group-hover:from-orange-300" />
+        <div className="w-px h-12 bg-gradient-to-b from-orange-400 to-transparent group-hover:from-orange-300" />
       </motion.div>
     </motion.div>
   );

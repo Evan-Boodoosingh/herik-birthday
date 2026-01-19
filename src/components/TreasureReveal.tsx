@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "motion/react";
 import { Gift, Sparkles, Star, X } from "lucide-react";
+import giftImage from "../assets/gift.png";
 
 export function TreasureReveal() {
   const [isOpen, setIsOpen] = useState(false);
@@ -198,13 +199,14 @@ export function TreasureReveal() {
                   <div className="space-y-4 text-[#f4e8d0]/90 leading-relaxed max-w-2xl mx-auto">
                     <p className="text-lg">
                       <strong className="text-orange-400">
-                        [INSERT_GIFT_MESSAGE_HERE]
+                        Fuck you Laggered!!!
                       </strong>
                     </p>
                     <p>
-                      Replace this text with your personalized gift message,
-                      surprise reveal, or special announcement. This is the
-                      culmination of the journey - make it memorable!
+                      You are genuinely the best friend I could've ever asked
+                      for. I hope that you've enjoyed this website and I hope
+                      that you have a great 40th birthday. I can't wait to see
+                      you again
                     </p>
                     <p className="text-sm text-[#f4e8d0]/60 italic">
                       "The treasure isn't the destination, it's the friends we
@@ -219,7 +221,6 @@ export function TreasureReveal() {
                     transition={{ delay: 1 }}
                     className="mt-8 max-w-md mx-auto"
                   >
-                    {/* GIFT IMAGE PLACEHOLDER - EASY TO REPLACE */}
                     <motion.div
                       className="relative overflow-hidden rounded-sm border-2 border-orange-500/30"
                       whileHover={{
@@ -229,15 +230,12 @@ export function TreasureReveal() {
                       transition={{ duration: 0.3 }}
                     >
                       <img
-                        src="https://images.unsplash.com/photo-1632809199725-72a4245e846b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx0cmVhc3VyZSUyMGNoZXN0JTIwZ29sZHxlbnwxfHx8fDE3Njg0MTc1NjB8MA&ixlib=rb-4.1.0&q=80&w=1080"
+                        src={giftImage}
                         alt="Gift Reveal"
                         className="w-full h-64 object-cover transition-transform duration-300 hover:scale-105"
                       />
                       <div className="absolute inset-0 bg-linear-to-t from-orange-500/30 to-transparent" />
                     </motion.div>
-                    <p className="text-center text-xs text-[#f4e8d0]/50 mt-2 tracking-wider uppercase">
-                      Replace with your gift image
-                    </p>
                   </motion.div>
                 </div>
               </motion.div>

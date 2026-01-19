@@ -7,6 +7,9 @@ import { TestimonialCard } from "./TestimonialCard";
 import { StoryCard } from "./StoryCard";
 import jandyBday2023 from "../assets/Jandy-bday-2023.jpeg";
 import pg2025 from "../assets/pg-2025.jpg";
+import alliMemory from "../assets/alli_memory.jpeg";
+import jamieMemory from "../assets/jamie-memory.jpeg";
+import jandiMemory from "../assets/jandi-memory.jpeg";
 
 export function LogbookSection() {
   const [selectedStory, setSelectedStory] = React.useState<number | null>(null);
@@ -28,9 +31,17 @@ export function LogbookSection() {
     },
     {
       id: 3,
-      author: "Tory",
+      author: "Anna",
+      role: "Lifetime Friend",
+      content:
+        "Happy Birthday to my lifetime friend. Over the years, you've opened my world to new experiences, introduced me to amazing people, and helped shape so many unforgettable memories. I'm incredibly grateful for you and for the bond we share. You are truly an amazing person—kind, loyal, and genuine—and I'm so thankful to have you in my life. I hope we continue to make many more memories together for years to come. Love you Friend!!!! ❤️❤️",
+    },
+    {
+      id: 4,
+      author: "Jamie",
       role: "Best Friend",
-      content: "Fuck you",
+      content:
+        "I know im probably the biggest shit talker but im just hiding behind the amount of love I have for this dude. Through all the bullshit, im blessed the army brought us together since 2012. Lucky to call him my big brother and best friend for life. Love you BIIITTTCCHHHH!! RIP E-40",
     },
   ];
 
@@ -41,7 +52,7 @@ export function LogbookSection() {
       date: "Europe Birthday Trip",
       content:
         "There are countless great memories with E. But my fave has to be when we went to Europe for my birthday. He left me with strangers to go buy weed and said he wasn't addicted to weed lol love him tho forever.",
-      imageUrl: jandyBday2023,
+      imageUrl: jandiMemory,
       fullStory:
         "There are countless great memories with E. But my fave has to be when we went to Europe for my birthday. He left me with strangers to go buy weed and said he wasn't addicted to weed lol love him tho forever. - Jandy's favorite memory with E",
     },
@@ -50,21 +61,30 @@ export function LogbookSection() {
       title: "Dancing Under the Northern Lights",
       date: "Igloo Fest Montreal - January 2025",
       content:
-        "One of my favorite memories with Herik is when we went to Igloo Fest in Montreal together. It was freezing cold, but dancing under the stars with him made it one of the warmest nights of my life.",
-      imageUrl:
-        "https://images.unsplash.com/photo-1604580826271-aa59d10b875a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxvY2VhbiUyMHdhdmVzJTIwc3Vuc2V0fGVufDF8fHx8MTc2ODQ2MDUzNXww&ixlib=rb-4.1.0&q=80&w=1080",
+        "I took him to Montreal for his 39th birthday to go to Igloo Fest to see Tape B and Zeds Dead. He mentioned that this guy on radiate was selling 2 VIP tickets and was also looking for drugs so Herik messaged him and he replied the address of his hotel...",
+      imageUrl: alliMemory,
       fullStory:
-        "One of my favorite memories with Herik is when we went to Igloo Fest in Montreal together. It was freezing cold, but dancing under the stars with him made it one of the warmest nights of my life. The music, the energy, and being wrapped up in each other made everything perfect. I'll never forget how he held me close to keep me warm while we danced the night away.",
+        "I took him to Montreal for his 39th birthday to go to Igloo Fest to see Tape B and Zeds Dead, He mentioned that this guy on radiate was selling 2 VIP tickets for Igloo fest and he was also looking for drugs so Herik messaged him and he replied the address of his hotel while we started tripping we progressed to walk to this random guys hotel and we start dancing outside waiting for him. He comes out and invites us in to go to his room. Were tripping sack at this point on dead chemist and he progresses to tell he's from Toronto and is a Underwater Welder. We all try to walk to show looking as normal as possible but security came up quick and Herik didn't hide .04 of Molly Juice where he tried to lie and say he's diabetic but they forced him to chug it before going in. After Chugging, our new Canadian homie hung out with us the whole time even to stop and take a photo for us with a guy clearly dressed like a frog and goes \"BABE HOLY SHIT LOOK AT THAT FUCKING TURTLE\" The Canadian also helped him mid Tape B set to get him to throw up on the side so he wouldn't get caught and he adventured with us back to our hotel where we all trauma dumped until 430 AM. I know throughout our life we will continuously have the funniest/chaotic interactions and experiences together and I'll always appreciate the lore we create together 💚💚💚",
     },
     {
       id: 3,
       title: "Brothers in Arms",
       date: "Big Night Live",
       content:
-        "Remember that time at Big Night Live when we almost got into a fight? Classic Herik energy - always ready to defend his crew.",
+        "Once upon a time at big night live a random angry drunk decided to make threats to one of my best friends, Herik. Obviously he knocked that lil bitch out.",
       imageUrl: pg2025,
       fullStory:
-        "Remember that time at Big Night Live when we almost got into a fight? That was peak cousin energy right there. You had my back without even thinking twice. That's what I love about you - you're always ready to stand up for your crew. We didn't need to throw punches that night because just having you there was enough. Love you, cuz.",
+        "Once upon a time at big night live a random angry drunk decided to make threats to one of my best friends, Herik. Obviously he knocked that lil bitch out. While he was handing that another random tried to sneak him so I had to back my mans up. Another knock out for and we got away no issues. Great night. The end.",
+    },
+    {
+      id: 4,
+      title: "Heart to Heart",
+      date: "Project Glow - June 2025",
+      content:
+        "Other than the time I bet E $50 that he couldn't do a backflip on the trampoline and he failed miserably (never forget)…my most favorite memory that I seriously hold closest to my heart is at PG last year.",
+      imageUrl: jamieMemory,
+      fullStory:
+        "Other than the time I bet E $50 that he couldn't do a backflip on the trampoline and he failed miserably (never forget)…my most favorite memory that I seriously hold closest to my heart is at PG last year. We had a heart to heart, cried then thugged it out, he showed me unconditional love and reassured me that he would love me no matter what, would always support me and just wants me to be happy. That's one of the many qualities I love about E, and how much he can make anyone feel welcomed and loved no matter what. Thank you for always being a safe space for me bro, love you fr fr",
     },
   ];
 
@@ -158,7 +178,7 @@ export function LogbookSection() {
                     alt={selectedStoryData.title}
                     className="w-full h-96 object-cover"
                   />
-                  <div className="absolute inset-0 bg-linear-to-t from-orange-500/20 to-transparent" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-orange-500/20 to-transparent" />
                 </div>
 
                 <div className="prose prose-invert max-w-none">

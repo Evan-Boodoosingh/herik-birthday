@@ -59,7 +59,7 @@ export function PowerUpEffect({ trigger }: { trigger: boolean }) {
             transition={{ duration: 1.5, delay: i * 0.1 }}
           >
             <div
-              className="w-40 h-1 bg-gradient-to-r from-transparent via-cyan-400 to-transparent"
+              className="w-40 h-1 bg-linear-to-r from-transparent via-cyan-400 to-transparent"
               style={{ transformOrigin: 'left center' }}
             />
           </motion.div>
@@ -88,7 +88,7 @@ export function NavCompass({ currentSection }: { currentSection: number }) {
         
         {/* Compass needle */}
         <motion.div
-          className="absolute top-1/2 left-1/2 w-1 h-8 bg-gradient-to-t from-cyan-400 to-red-500 origin-bottom"
+          className="absolute top-1/2 left-1/2 w-1 h-8 bg-linear-to-t from-cyan-400 to-red-500 origin-bottom"
           style={{
             transform: 'translate(-50%, -100%)',
           }}
@@ -196,7 +196,7 @@ export function OnePieceText({ children }: { children: string }) {
         {children}
       </span>
       <span
-        className="relative z-10 text-transparent bg-clip-text bg-gradient-to-b from-yellow-300 via-orange-400 to-red-500"
+        className="relative z-10 text-transparent bg-clip-text bg-linear-to-b from-yellow-300 via-orange-400 to-red-500"
         style={{
           WebkitTextStroke: '1px #fff',
           filter: 'drop-shadow(0 0 10px rgba(251, 191, 36, 0.7))',

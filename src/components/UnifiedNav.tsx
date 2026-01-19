@@ -123,7 +123,7 @@ export function UnifiedNav() {
               >
                 {/* Solid backdrop */}
                 <div
-                  className="absolute inset-0 bg-gradient-to-br from-black via-[#0a0604] to-black"
+                  className="absolute inset-0 bg-linear-to-br from-black via-[#0a0604] to-black"
                   onClick={() => setIsMenuOpen(false)}
                 />
 
