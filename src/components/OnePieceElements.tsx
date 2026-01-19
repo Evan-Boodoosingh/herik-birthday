@@ -1,5 +1,5 @@
-import React from 'react';
-import { motion } from 'motion/react';
+import React from "react";
+import { motion } from "motion/react";
 
 // Floating Sakura petals or sea spray particles
 export function FloatingParticles() {
@@ -24,7 +24,7 @@ export function FloatingParticles() {
             duration: 10 + Math.random() * 10,
             repeat: Infinity,
             delay: Math.random() * 10,
-            ease: 'linear',
+            ease: "linear",
           }}
         >
           <div className="w-2 h-2 bg-orange-400/30 rounded-full blur-sm" />
@@ -60,7 +60,7 @@ export function PowerUpEffect({ trigger }: { trigger: boolean }) {
           >
             <div
               className="w-40 h-1 bg-linear-to-r from-transparent via-cyan-400 to-transparent"
-              style={{ transformOrigin: 'left center' }}
+              style={{ transformOrigin: "left center" }}
             />
           </motion.div>
         ))}
@@ -81,38 +81,54 @@ export function NavCompass({ currentSection }: { currentSection: number }) {
       <motion.div
         className="relative w-20 h-20"
         animate={{ rotate: 360 }}
-        transition={{ duration: 20, repeat: Infinity, ease: 'linear' }}
+        transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
       >
         {/* Compass circle */}
         <div className="absolute inset-0 rounded-full border-2 border-cyan-400/30 bg-[#0a0e27]/80 backdrop-blur-sm" />
-        
+
         {/* Compass needle */}
         <motion.div
           className="absolute top-1/2 left-1/2 w-1 h-8 bg-linear-to-t from-cyan-400 to-red-500 origin-bottom"
           style={{
-            transform: 'translate(-50%, -100%)',
+            transform: "translate(-50%, -100%)",
           }}
           animate={{ rotate: currentSection * 90 }}
-          transition={{ type: 'spring', stiffness: 100 }}
+          transition={{ type: "spring", stiffness: 100 }}
         />
-        
+
         {/* Center dot */}
         <div className="absolute top-1/2 left-1/2 w-2 h-2 bg-cyan-400 rounded-full transform -translate-x-1/2 -translate-y-1/2" />
-        
+
         {/* Cardinal directions */}
-        <div className="absolute top-1 left-1/2 transform -translate-x-1/2 text-cyan-400 text-xs">N</div>
-        <div className="absolute bottom-1 left-1/2 transform -translate-x-1/2 text-cyan-400 text-xs">S</div>
-        <div className="absolute left-1 top-1/2 transform -translate-y-1/2 text-cyan-400 text-xs">W</div>
-        <div className="absolute right-1 top-1/2 transform -translate-y-1/2 text-cyan-400 text-xs">E</div>
+        <div className="absolute top-1 left-1/2 transform -translate-x-1/2 text-cyan-400 text-xs">
+          N
+        </div>
+        <div className="absolute bottom-1 left-1/2 transform -translate-x-1/2 text-cyan-400 text-xs">
+          S
+        </div>
+        <div className="absolute left-1 top-1/2 transform -translate-y-1/2 text-cyan-400 text-xs">
+          W
+        </div>
+        <div className="absolute right-1 top-1/2 transform -translate-y-1/2 text-cyan-400 text-xs">
+          E
+        </div>
       </motion.div>
-      
-      <p className="text-center text-cyan-400 text-xs mt-2 tracking-wider">NAVIGATE</p>
+
+      <p className="text-center text-cyan-400 text-xs mt-2 tracking-wider">
+        NAVIGATE
+      </p>
     </motion.div>
   );
 }
 
 // Bounty counter animation
-export function BountyCounter({ value, label }: { value: number; label: string }) {
+export function BountyCounter({
+  value,
+  label,
+}: {
+  value: number;
+  label: string;
+}) {
   const [count, setCount] = React.useState(0);
 
   React.useEffect(() => {
@@ -153,7 +169,11 @@ export function BountyCounter({ value, label }: { value: number; label: string }
 export function SpeedLines({ intensity = 0.3 }) {
   return (
     <div className="fixed inset-0 pointer-events-none overflow-hidden opacity-10">
-      <svg className="w-full h-full" viewBox="0 0 100 100" preserveAspectRatio="none">
+      <svg
+        className="w-full h-full"
+        viewBox="0 0 100 100"
+        preserveAspectRatio="none"
+      >
         {Array.from({ length: 20 }).map((_, i) => (
           <motion.line
             key={i}
@@ -172,7 +192,7 @@ export function SpeedLines({ intensity = 0.3 }) {
               duration: 3,
               repeat: Infinity,
               delay: i * 0.1,
-              ease: 'linear',
+              ease: "linear",
             }}
           />
         ))}
@@ -189,8 +209,8 @@ export function OnePieceText({ children }: { children: string }) {
       <span
         className="absolute top-1 left-1 text-transparent"
         style={{
-          WebkitTextStroke: '2px #8b5cf6',
-          textShadow: '0 0 20px rgba(139, 92, 246, 0.5)',
+          WebkitTextStroke: "2px #8b5cf6",
+          textShadow: "0 0 20px rgba(139, 92, 246, 0.5)",
         }}
       >
         {children}
@@ -198,8 +218,8 @@ export function OnePieceText({ children }: { children: string }) {
       <span
         className="relative z-10 text-transparent bg-clip-text bg-linear-to-b from-yellow-300 via-orange-400 to-red-500"
         style={{
-          WebkitTextStroke: '1px #fff',
-          filter: 'drop-shadow(0 0 10px rgba(251, 191, 36, 0.7))',
+          WebkitTextStroke: "1px #fff",
+          filter: "drop-shadow(0 0 10px rgba(251, 191, 36, 0.7))",
         }}
       >
         {children}
