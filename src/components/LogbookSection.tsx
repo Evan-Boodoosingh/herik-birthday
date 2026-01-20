@@ -11,6 +11,8 @@ import alliMemory from "../assets/alli_memory.jpeg";
 import jamieMemory from "../assets/jamie-memory.jpeg";
 import jandiMemory from "../assets/jandi-memory.jpeg";
 import temMemory from "../assets/tem-memory.JPG";
+import devinMemory from "../assets/devin-momory.JPG";
+import mikeMemory from "../assets/mike-memory.jpeg";
 
 export function LogbookSection() {
   const [selectedStory, setSelectedStory] = React.useState<number | null>(null);
@@ -57,6 +59,20 @@ export function LogbookSection() {
       role: "Best Friend",
       content:
         "E is da big brother I've never had. He is a soft teddy bear and da biggest pain in my ass. Jkjk  he motivates me to get my shit together but also so free and caring and down for anything. He's an energizer bunny and is always can keep going and going lol People gravitate towards him and he is a social butterfly/rubber ducky lol there's so many other great things i can write down that sums up our 12 years of friendship but the one thing that sticks out the most is his big heart and loving caring loyal character. I Will always love him like ohana cuz he is and will roast his ass too!! Happy birthday ya old fart.",
+    },
+    {
+      id: 7,
+      author: "Devin",
+      role: "Best Friend",
+      content:
+        "Happy 40th Birthday to the brother I never asked for! 🤣 All jokes aside, you're one of my best friends and I love you to death. I hope you have the best day ever.",
+    },
+    {
+      id: 8,
+      author: "Mike",
+      role: "Herik's Secret Lover",
+      content:
+        "From the moment Lisa introduced me to him, I knew this wasn't just going to be a bromance. It was love…brotherly love if you will. Herik is someone I know I can count on when shit hits the fan and he can always count on me. Every time we hangout it's nothing but the best time. He's a natural leader that people look up to in the crew.",
     },
   ];
 
@@ -110,6 +126,16 @@ export function LogbookSection() {
       imageUrl: temMemory,
       fullStory:
         "My favorite memory is when he hid unknown substances up his butt…….. I mean my favorite memory is when he decided to Squat 300lbs like it was nothing. Congrats to him he did….. but at what cost. We know the ending to that story, I don't want to traumatize you buddy. That was legendary! - yours truly Tem",
+    },
+    {
+      id: 6,
+      title: "Saved My Life",
+      date: "Boston Intersection",
+      content:
+        "One of my funniest memories is the time I fell in the middle of a busy intersection in Boston. You didn't hesitate for a second to pick me up and get me out of the street. (I wasn't even drunk yet)",
+      imageUrl: devinMemory,
+      fullStory:
+        "One of my funniest memories is the time I fell in the middle of a busy intersection in Boston. You didn't hesitate for a second to pick me up and get me out of the street. (I wasn't even drunk yet) You literally saved my life that day—and even though you'll never let me live it down, I'll never forget it. Thank you for the endless laughs and for being such an amazing friend!",
     },
   ];
 
@@ -203,7 +229,7 @@ export function LogbookSection() {
                     alt={selectedStoryData.title}
                     className="w-full h-96 object-cover"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-orange-500/20 to-transparent" />
+                  <div className="absolute inset-0 bg-linear-to-t from-orange-500/20 to-transparent" />
                 </div>
 
                 <div className="prose prose-invert max-w-none">

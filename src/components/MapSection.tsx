@@ -18,6 +18,13 @@ import fayetteville2012 from "../assets/Fayetteville-2012.jpeg";
 import snapchat2012 from "../assets/SNAPCHAT(2012).png";
 import youreGonnaGetHurt2012 from "../assets/youre_gonna_get_hurt-2012.jpeg";
 import edcOrlando2014 from "../assets/EDC-ORLANDO-2014.jpeg";
+import july2023 from "../assets/July-2023.JPG";
+import ezoo2023 from "../assets/ezoo-2023.jpeg";
+import ezoo2023B from "../assets/ezoo--2023.jpeg";
+import halloween2023 from "../assets/Halloween-2023.jpeg";
+import august2025 from "../assets/August-2025.jpeg";
+import hawaiiDec2025 from "../assets/Hawaii-December-2025.jpeg";
+import masqueradeBall2025 from "../assets/Masquerade-ball-2025.jpeg";
 import fiftyBucksBackflip2016 from "../assets/50_bucks_you_cant_do_a_backflip-2016.jpeg";
 import iCanSquatHim2016 from "../assets/I_can_squat_him-2016.jpeg";
 import fayetteville2015A from "../assets/Fayetteville--2015.jpeg";
@@ -36,6 +43,7 @@ import hawaii2025 from "../assets/Hawaii-2025.jpg";
 import kaneoheHawaii2025 from "../assets/Kaneohe_Sandbar-in-Hawaii-2025.jpg";
 import pg2025 from "../assets/pg-2025.jpg";
 import wooliHawaii2025 from "../assets/wooli-hawaii-2025.jpg";
+import mikeMemory from "../assets/mike-memory.jpeg";
 
 interface Milestone {
   id: number;
@@ -220,87 +228,143 @@ export function MapSection() {
     },
     {
       id: 22,
+      year: "2023",
+      title: "July Adventures",
+      description: "Summer memories with the crew.",
+      imageUrl: july2023,
+    },
+    {
+      id: 23,
+      year: "2023",
+      title: "Ezoo",
+      description: "Electric Zoo festival vibes.",
+      imageUrl: ezoo2023,
+    },
+    {
+      id: 24,
+      year: "2023",
+      title: "Ezoo Crew",
+      description: "More festival memories.",
+      imageUrl: ezoo2023B,
+    },
+    {
+      id: 25,
+      year: "2023",
+      title: "Halloween",
+      description: "Spooky season with the crew.",
+      imageUrl: halloween2023,
+    },
+    {
+      id: 26,
       year: "2024",
       title: "Ace",
       description: "Epic moments and unforgettable experiences.",
       imageUrl: ace2024,
     },
     {
-      id: 23,
+      id: 27,
       year: "2024",
       title: "Good Times",
       description: "Living life to the fullest.",
       imageUrl: drunk2024,
     },
     {
-      id: 24,
+      id: 28,
       year: "2024",
       title: "Lost Lands",
       description: "Epic festival vibes and amazing music.",
       imageUrl: lostLands2024,
     },
     {
-      id: 25,
+      id: 29,
       year: "2024",
       title: "San Diego",
       description: "California sunshine and good times.",
       imageUrl: sanDiego2024,
     },
     {
-      id: 26,
+      id: 30,
       year: "2025",
       title: "7s",
       description: "Adventures continue in 2025.",
       imageUrl: sevenS2025,
     },
     {
-      id: 27,
+      id: 31,
+      year: "2025",
+      title: "May Memories",
+      description: "Good times with the crew.",
+      imageUrl: mikeMemory,
+    },
+    {
+      id: 32,
       year: "2025",
       title: "7s October",
       description: "Fall festivities and fun.",
       imageUrl: sevenSOct2025,
     },
     {
-      id: 28,
+      id: 33,
+      year: "2025",
+      title: "August Vibes",
+      description: "Late summer memories.",
+      imageUrl: august2025,
+    },
+    {
+      id: 34,
       year: "2025",
       title: "EDC Las Vegas",
       description: "Under the electric sky in Vegas.",
       imageUrl: edcVegas2025,
     },
     {
-      id: 29,
+      id: 35,
       year: "2025",
       title: "Frog",
       description: "Unique moments and memories.",
       imageUrl: frog2025,
     },
     {
-      id: 30,
+      id: 36,
       year: "2025",
       title: "Hawaii",
       description: "Paradise found on the islands.",
       imageUrl: hawaii2025,
     },
     {
-      id: 31,
+      id: 37,
       year: "2025",
       title: "Kaneohe Sandbar",
       description: "Beautiful waters and tropical vibes.",
       imageUrl: kaneoheHawaii2025,
     },
     {
-      id: 32,
+      id: 38,
       year: "2025",
       title: "PG",
       description: "More adventures and good times.",
       imageUrl: pg2025,
     },
     {
-      id: 33,
+      id: 39,
       year: "2025",
       title: "Wooli in Hawaii",
       description: "Epic music and island paradise.",
       imageUrl: wooliHawaii2025,
+    },
+    {
+      id: 40,
+      year: "2025",
+      title: "Hawaii December",
+      description: "Paradise in winter.",
+      imageUrl: hawaiiDec2025,
+    },
+    {
+      id: 41,
+      year: "2025",
+      title: "Masquerade Ball",
+      description: "Elegant night with the crew.",
+      imageUrl: masqueradeBall2025,
     },
   ];
 
@@ -315,8 +379,8 @@ export function MapSection() {
   });
 
   const sectionHeight = isMobile
-    ? 150 + (milestones.length - 1) * 450 + 350 + 300
-    : 150 + (milestones.length - 1) * 520 + 450 + 400;
+    ? 150 + (milestones.length - 1) * 450 + 350 + 100
+    : 150 + (milestones.length - 1) * 520 + 450 + 150;
 
   return (
     <section
@@ -497,7 +561,7 @@ export function MapSection() {
                     className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
                   />
                   <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-300" />
-                  <div className="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-[#2d1810] via-[#2d1810]/80 to-transparent transform translate-y-2 group-hover:translate-y-0 transition-transform duration-300">
+                  <div className="absolute bottom-0 left-0 right-0 p-4 bg-linear-to-t from-[#2d1810] via-[#2d1810]/80 to-transparent transform translate-y-2 group-hover:translate-y-0 transition-transform duration-300">
                     <div className="text-orange-400 text-sm font-semibold mb-1 transition-colors duration-300 group-hover:text-orange-300">
                       {milestone.year}
                     </div>
