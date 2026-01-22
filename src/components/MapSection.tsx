@@ -44,9 +44,14 @@ import kaneoheHawaii2025 from "../assets/Kaneohe_Sandbar-in-Hawaii-2025.jpg";
 import pg2025 from "../assets/pg-2025.jpg";
 import wooliHawaii2025 from "../assets/wooli-hawaii-2025.jpg";
 import mikeMemory from "../assets/mike-memory.jpeg";
+import deployment2011 from "../assets/2011-Deployment-to-Afghanistan .JPG";
+import bwwAbdul2012 from "../assets/2012-BWW-with-Abdul.JPG";
+import fayetteville2012B from "../assets/2012-Fayetteville.JPG";
+import subtronics2023 from "../assets/subtronics-2023.jpg";
+import aprilTapeB2024 from "../assets/april-2024-TapeB.jpg";
+import edco2025 from "../assets/edco-2025.jpeg";
 
 interface Milestone {
-  id: number;
   year: string;
   title: string;
   description: string;
@@ -79,42 +84,54 @@ export function MapSection() {
 
   const milestones: Milestone[] = [
     {
-      id: 1,
+      year: "2011",
+      title: "Deployment to Afghanistan",
+      description: "Serving our country with honor.",
+      imageUrl: deployment2011,
+    },
+    {
       year: "2012",
       title: "Fayetteville",
       description: "Early adventures and memories.",
       imageUrl: fayetteville2012,
     },
     {
-      id: 2,
+      year: "2012",
+      title: "BWW with Abdul",
+      description: "Good times with the crew.",
+      imageUrl: bwwAbdul2012,
+    },
+    {
+      year: "2012",
+      title: "Fayetteville Memories",
+      description: "More unforgettable moments.",
+      imageUrl: fayetteville2012B,
+    },
+    {
       year: "2012",
       title: "Snapchat Days",
       description: "No wonder they got banned from Snapchat.",
       imageUrl: snapchat2012,
     },
     {
-      id: 3,
       year: "2012",
       title: "You're Gonna Get Hurt",
       description: "Living dangerously and loving it.",
       imageUrl: youreGonnaGetHurt2012,
     },
     {
-      id: 4,
       year: "2014",
       title: "EDC Orlando",
       description: "Electric Daisy Carnival in Orlando.",
       imageUrl: edcOrlando2014,
     },
     {
-      id: 5,
       year: "2015",
       title: "April 2015",
       description: "Spring memories and good times.",
       imageUrl: april2015,
     },
     {
-      id: 6,
       year: "2015",
       title: "EDCO Orlando",
       description:
@@ -122,245 +139,228 @@ export function MapSection() {
       imageUrl: edco2015,
     },
     {
-      id: 7,
       year: "2015",
       title: "Fayetteville",
       description: "More good times in Fayetteville.",
       imageUrl: fayetteville2015A,
     },
     {
-      id: 8,
       year: "2015",
       title: "Fayetteville Adventures",
       description: "Continuing the journey.",
       imageUrl: fayetteville2015B,
     },
     {
-      id: 9,
       year: "2015",
       title: "Foam Party Fayetteville",
       description: "Epic foam party vibes.",
       imageUrl: fayettevilleFoam2015,
     },
     {
-      id: 10,
       year: "2015",
       title: "Road Trip to Georgia",
       description: "Adventures on the open road.",
       imageUrl: roadTripGeorgia2015,
     },
     {
-      id: 11,
       year: "2016",
       title: "$50 Backflip Challenge",
       description: "$50 bucks you can't do a backflip.",
       imageUrl: fiftyBucksBackflip2016,
     },
     {
-      id: 12,
       year: "2016",
       title: "I Can Squat Him",
       description: "Showing off those gains.",
       imageUrl: iCanSquatHim2016,
     },
     {
-      id: 13,
       year: "2018",
       title: "Las Vegas",
       description: "Vegas adventures with the crew.",
       imageUrl: lasVegas2018,
     },
     {
-      id: 14,
       year: "2019",
       title: "Japan Adventure",
       description: "Exploring the beauty and culture of Japan.",
       imageUrl: japan2019,
     },
     {
-      id: 15,
       year: "2022",
       title: "Paris",
       description: "The city of lights and unforgettable memories.",
       imageUrl: paris2022,
     },
     {
-      id: 16,
       year: "2022",
       title: "The Louvre",
       description: "Discovering art and history in Paris.",
       imageUrl: leLouvre2022,
     },
     {
-      id: 17,
       year: "2022",
       title: "EDC Vegas With The Boys",
       description: "Epic times under the electric sky with the crew.",
       imageUrl: edcVegas2022,
     },
     {
-      id: 18,
       year: "2022",
       title: "EDC Orlando",
       description: "Electric Daisy Carnival in Orlando.",
       imageUrl: edcOrlando2022,
     },
     {
-      id: 19,
       year: "2023",
       title: "EDC Las Vegas",
       description: "Electric energy under the Vegas sky.",
       imageUrl: edcVegas2023,
     },
     {
-      id: 20,
       year: "2023",
       title: "Jandy's Birthday",
       description: "Celebrating a special day with friends.",
       imageUrl: jandyBday2023,
     },
     {
-      id: 21,
       year: "2023",
       title: "Karaoke in Hawaii",
       description: "Singing our hearts out in paradise.",
       imageUrl: karaokeHawaii2023,
     },
     {
-      id: 22,
       year: "2023",
       title: "July Adventures",
       description: "Summer memories with the crew.",
       imageUrl: july2023,
     },
     {
-      id: 23,
       year: "2023",
       title: "Ezoo",
       description: "Electric Zoo festival vibes.",
       imageUrl: ezoo2023,
     },
     {
-      id: 24,
       year: "2023",
       title: "Ezoo Crew",
       description: "More festival memories.",
       imageUrl: ezoo2023B,
     },
     {
-      id: 25,
       year: "2023",
       title: "Halloween",
       description: "Spooky season with the crew.",
       imageUrl: halloween2023,
     },
     {
-      id: 26,
+      year: "2023",
+      title: "Subtronics",
+      description: "Epic bass music vibes.",
+      imageUrl: subtronics2023,
+    },
+    {
       year: "2024",
       title: "Ace",
       description: "Epic moments and unforgettable experiences.",
       imageUrl: ace2024,
     },
     {
-      id: 27,
+      year: "2024",
+      title: "April - Tape B",
+      description: "Spring festival memories.",
+      imageUrl: aprilTapeB2024,
+    },
+    {
       year: "2024",
       title: "Good Times",
       description: "Living life to the fullest.",
       imageUrl: drunk2024,
     },
     {
-      id: 28,
       year: "2024",
       title: "Lost Lands",
       description: "Epic festival vibes and amazing music.",
       imageUrl: lostLands2024,
     },
     {
-      id: 29,
       year: "2024",
       title: "San Diego",
       description: "California sunshine and good times.",
       imageUrl: sanDiego2024,
     },
     {
-      id: 30,
       year: "2025",
       title: "7s",
       description: "Adventures continue in 2025.",
       imageUrl: sevenS2025,
     },
     {
-      id: 31,
       year: "2025",
       title: "May Memories",
       description: "Good times with the crew.",
       imageUrl: mikeMemory,
     },
     {
-      id: 32,
-      year: "2025",
-      title: "7s October",
-      description: "Fall festivities and fun.",
-      imageUrl: sevenSOct2025,
-    },
-    {
-      id: 33,
       year: "2025",
       title: "August Vibes",
       description: "Late summer memories.",
       imageUrl: august2025,
     },
     {
-      id: 34,
+      year: "2025",
+      title: "7s October",
+      description: "Fall festivities and fun.",
+      imageUrl: sevenSOct2025,
+    },
+    {
+      year: "2025",
+      title: "EDCO Orlando",
+      description: "Electric Daisy Carnival returns to Orlando.",
+      imageUrl: edco2025,
+    },
+    {
       year: "2025",
       title: "EDC Las Vegas",
       description: "Under the electric sky in Vegas.",
       imageUrl: edcVegas2025,
     },
     {
-      id: 35,
       year: "2025",
       title: "Frog",
       description: "Unique moments and memories.",
       imageUrl: frog2025,
     },
     {
-      id: 36,
       year: "2025",
       title: "Hawaii",
       description: "Paradise found on the islands.",
       imageUrl: hawaii2025,
     },
     {
-      id: 37,
       year: "2025",
       title: "Kaneohe Sandbar",
       description: "Beautiful waters and tropical vibes.",
       imageUrl: kaneoheHawaii2025,
     },
     {
-      id: 38,
       year: "2025",
       title: "PG",
       description: "More adventures and good times.",
       imageUrl: pg2025,
     },
     {
-      id: 39,
       year: "2025",
       title: "Wooli in Hawaii",
       description: "Epic music and island paradise.",
       imageUrl: wooliHawaii2025,
     },
     {
-      id: 40,
       year: "2025",
       title: "Hawaii December",
       description: "Paradise in winter.",
       imageUrl: hawaiiDec2025,
     },
     {
-      id: 41,
       year: "2025",
       title: "Masquerade Ball",
       description: "Elegant night with the crew.",
@@ -516,7 +516,7 @@ export function MapSection() {
 
           return (
             <motion.div
-              key={milestone.id}
+              key={index}
               className="z-20"
               style={{
                 position: "absolute",

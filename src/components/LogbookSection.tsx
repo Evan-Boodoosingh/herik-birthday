@@ -13,6 +13,10 @@ import jandiMemory from "../assets/jandi-memory.jpeg";
 import temMemory from "../assets/tem-memory.JPG";
 import devinMemory from "../assets/devin-momory.JPG";
 import mikeMemory from "../assets/mike-memory.jpeg";
+import lisaMemory from "../assets/lisa-memory.JPEG";
+import manfredoMemory from "../assets/manfredo-memory.jpeg";
+import saraMemory from "../assets/sara-memory.JPG";
+import malMemory from "../assets/mal-memory.JPG";
 
 export function LogbookSection() {
   const [selectedStory, setSelectedStory] = React.useState<number | null>(null);
@@ -73,6 +77,34 @@ export function LogbookSection() {
       role: "Herik's Secret Lover",
       content:
         "From the moment Lisa introduced me to him, I knew this wasn't just going to be a bromance. It was love…brotherly love if you will. Herik is someone I know I can count on when shit hits the fan and he can always count on me. Every time we hangout it's nothing but the best time. He's a natural leader that people look up to in the crew.",
+    },
+    {
+      id: 9,
+      author: "Lisa",
+      role: "Friend",
+      content:
+        "I once met a wise man who told me that smoking was bad for me… who would have thought that would be the start of a friendship? I met E about 12 years ago at a Latin bar—hard not to like someone with a friendly smile and great dance moves. Life took us on different paths for a while, but I love that it brought him back and even closer this time. He's funny, welcoming, inclusive, and genuine. I'm really happy to call E my friend.",
+    },
+    {
+      id: 10,
+      author: "Manfredo",
+      role: "Cuddle Buddy",
+      content:
+        "E is a genuine friend that truly cares for those around him. He was one of a handful of people that reached out to me when I first got out the Army and that impacted me so much, especially since we didn't talk that much at that time.",
+    },
+    {
+      id: 11,
+      author: "Sara",
+      role: "Friend",
+      content:
+        "I have always appreciated how Herik brings people together!!! He has opened up such a world of love and friendship for me always so welcoming and kind 🩷",
+    },
+    {
+      id: 12,
+      author: "Robin",
+      role: "Friend",
+      content:
+        "Happy 40th my friend. You're one of my favorite people to be around. Continue to be the awesome person you are!",
     },
   ];
 
@@ -136,6 +168,36 @@ export function LogbookSection() {
       imageUrl: devinMemory,
       fullStory:
         "One of my funniest memories is the time I fell in the middle of a busy intersection in Boston. You didn't hesitate for a second to pick me up and get me out of the street. (I wasn't even drunk yet) You literally saved my life that day—and even though you'll never let me live it down, I'll never forget it. Thank you for the endless laughs and for being such an amazing friend!",
+    },
+    {
+      id: 7,
+      title: "The Cuddle at EDC",
+      date: "EDC Orlando 2014",
+      content:
+        "My favorite memory of E would definitely be getting to know him by cuddling him during EDC Orlando 2014 lol",
+      imageUrl: manfredoMemory,
+      fullStory:
+        "My favorite memory of E would definitely be getting to know him by cuddling him during EDC Orlando 2014 lol. With love, Manfredo",
+    },
+    {
+      id: 8,
+      title: "Dad in Handcuffs",
+      date: "The Arrest",
+      content:
+        "I'll never forget the sight of him in handcuffs, i was like ALLIE THEYRE TAKING OUR DAD!!!",
+      imageUrl: saraMemory,
+      fullStory:
+        "I'll never forget the sight of him in handcuffs, i was like ALLIE THEYRE TAKING OUR DAD!!!",
+    },
+    {
+      id: 9,
+      title: "Bass Goblin",
+      date: "Mau P - 24th Birthday",
+      content:
+        "Herik- my mf brother! I appreciate you for showing up for me when I was rebuilding my life back home in Mass. I'll never forget my 24th birthday when we went to Mau P and we were basically strangers.",
+      imageUrl: malMemory,
+      fullStory:
+        "Herik- my mf brother! I appreciate you for showing up for me when I was rebuilding my life back home in Mass. I'll never forget my 24th birthday when we went to Mau P and we were basically strangers. From there our rave extravaganza took off and that meant more to me than you'll ever know. I appreciate every laugh, dance, smoke, and good time with you and the rave fam we built. Couldn't be more happy to celebrate you and every show/festival together makes my heart so happy. Thank you for being a great friend and support system for me in some of my darker times. You are a light and I appreciate you so much!!! Happy 40th birthday to my dawg! Hope this year brings you blessings you didn't think possible. Cheers to much more head banging and being a bass goblin with ya 🫶🏼😎",
     },
   ];
 
