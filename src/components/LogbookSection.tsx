@@ -25,7 +25,7 @@ export function LogbookSection() {
   const testimonials = [
     {
       id: 1,
-      author: "Evan Boodoosingh",
+      author: "Evan",
       role: "Brother",
       content:
         "He is my best friend. Everybody around me who knew the both of us before we met each other told us that we were going to get along great. Little did they know that they unlocked the world's best dynamic duo.",

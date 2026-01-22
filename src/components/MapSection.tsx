@@ -49,6 +49,7 @@ import bwwAbdul2012 from "../assets/2012-BWW-with-Abdul.JPG";
 import fayetteville2012B from "../assets/2012-Fayetteville.JPG";
 import june2013 from "../assets/june-2013.jpeg";
 import subtronics2023 from "../assets/subtronics-2023.jpg";
+import november2023 from "../assets/november-2023.jpeg";
 import latinNight2023 from "../assets/Latin–night–May-2023.png";
 import aprilTapeB2024 from "../assets/april-2024-TapeB.jpg";
 import edco2025 from "../assets/edco-2025.jpeg";
@@ -271,6 +272,12 @@ export function MapSection() {
       title: "Subtronics",
       description: "Epic bass music vibes.",
       imageUrl: subtronics2023,
+    },
+    {
+      year: "2023",
+      title: "November 2023",
+      description: "Late fall memories with the crew.",
+      imageUrl: november2023,
     },
     {
       year: "2024",
