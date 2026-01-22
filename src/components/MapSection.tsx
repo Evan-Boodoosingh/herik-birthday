@@ -10,8 +10,8 @@ import japan2019 from "../assets/japan-jan-2019.jpg";
 import paris2022 from "../assets/Paris-2022.jpeg";
 import leLouvre2022 from "../assets/The-Le_Louvere-2022.jpeg";
 import edcVegas2022 from "../assets/EDC-VEGAS-2022-WITH-THE-BOYS.JPG";
-import edcOrlando2022 from "../assets/EDC-ORLANDO-2022.jpeg";
-import edcVegas2023 from "../assets/EDC-VEGAS-2023.jpeg";
+import edcOrlando2022 from "../assets/edco-2022.jpeg";
+import edcVegas2023 from "../assets/edclv-2023.jpeg";
 import jandyBday2023 from "../assets/Jandy-bday-2023.jpeg";
 import karaokeHawaii2023 from "../assets/Karaoke-in-Hawaii-2023.jpg";
 import fayetteville2012 from "../assets/Fayetteville-2012.jpeg";
@@ -47,7 +47,9 @@ import mikeMemory from "../assets/mike-memory.jpeg";
 import deployment2011 from "../assets/2011-Deployment-to-Afghanistan .JPG";
 import bwwAbdul2012 from "../assets/2012-BWW-with-Abdul.JPG";
 import fayetteville2012B from "../assets/2012-Fayetteville.JPG";
+import june2013 from "../assets/june-2013.jpeg";
 import subtronics2023 from "../assets/subtronics-2023.jpg";
+import latinNight2023 from "../assets/Latin–night–May-2023.png";
 import aprilTapeB2024 from "../assets/april-2024-TapeB.jpg";
 import edco2025 from "../assets/edco-2025.jpeg";
 
@@ -118,6 +120,12 @@ export function MapSection() {
       title: "You're Gonna Get Hurt",
       description: "Living dangerously and loving it.",
       imageUrl: youreGonnaGetHurt2012,
+    },
+    {
+      year: "2013",
+      title: "June 2013",
+      description: "Good times with friends.",
+      imageUrl: june2013,
     },
     {
       year: "2014",
@@ -215,6 +223,12 @@ export function MapSection() {
       title: "EDC Las Vegas",
       description: "Electric energy under the Vegas sky.",
       imageUrl: edcVegas2023,
+    },
+    {
+      year: "2023",
+      title: "Latin Night",
+      description: "Dancing the night away.",
+      imageUrl: latinNight2023,
     },
     {
       year: "2023",
@@ -553,6 +567,7 @@ export function MapSection() {
                 whileTap={{ scale: 0.98 }}
                 onClick={() => setSelectedMilestone(milestone)}
                 className="relative w-72 h-96 md:w-80 md:h-[28rem] rounded-lg overflow-hidden border-4 border-orange-500/40 shadow-[0_0_30px_rgba(255,111,0,0.3)] cursor-pointer bg-[#2d1810] group z-30"
+                style={{ touchAction: "pan-y" }}
               >
                 <div className="relative w-full h-full">
                   <img

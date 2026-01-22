@@ -17,6 +17,7 @@ import lisaMemory from "../assets/lisa-memory.JPEG";
 import manfredoMemory from "../assets/manfredo-memory.jpeg";
 import saraMemory from "../assets/sara-memory.JPG";
 import malMemory from "../assets/mal-memory.JPG";
+import briMemory from "../assets/bri-memory.jpeg";
 
 export function LogbookSection() {
   const [selectedStory, setSelectedStory] = React.useState<number | null>(null);
@@ -25,7 +26,7 @@ export function LogbookSection() {
     {
       id: 1,
       author: "Evan Boodoosingh",
-      role: "Best Friend",
+      role: "Brother",
       content:
         "He is my best friend. Everybody around me who knew the both of us before we met each other told us that we were going to get along great. Little did they know that they unlocked the world's best dynamic duo.",
     },
@@ -46,9 +47,9 @@ export function LogbookSection() {
     {
       id: 4,
       author: "Jamie",
-      role: "Best Friend",
+      role: "Best Midget Friend",
       content:
-        "I know im probably the biggest shit talker but im just hiding behind the amount of love I have for this dude. Through all the bullshit, im blessed the army brought us together since 2012. Lucky to call him my big brother and best friend for life. Love you BIIITTTCCHHHH!! RIP E-40",
+        "I know im probably the biggest shit talker but im just hiding behind the amount of love I have for this dude. E truly knows how to bring everyone together and he's seriously the life of the party. You can immediately feel his energy in the room whether it's his loud ass voice or his sexy dance moves. Through all the bullshit, im blessed the army brought us together since 2012. Lucky to call him my big brother and best friend for life. Love you BIIITTTCCHHHH!! Happy 40th birthday bestie!\n\nP.S. I still don't know half the shit he be saying, RIP E-40",
     },
     {
       id: 5,
@@ -81,7 +82,7 @@ export function LogbookSection() {
     {
       id: 9,
       author: "Lisa",
-      role: "Friend",
+      role: "Dance Partner",
       content:
         "I once met a wise man who told me that smoking was bad for me… who would have thought that would be the start of a friendship? I met E about 12 years ago at a Latin bar—hard not to like someone with a friendly smile and great dance moves. Life took us on different paths for a while, but I love that it brought him back and even closer this time. He's funny, welcoming, inclusive, and genuine. I'm really happy to call E my friend.",
     },
@@ -95,16 +96,30 @@ export function LogbookSection() {
     {
       id: 11,
       author: "Sara",
-      role: "Friend",
+      role: "Rave Fam",
       content:
         "I have always appreciated how Herik brings people together!!! He has opened up such a world of love and friendship for me always so welcoming and kind 🩷",
     },
     {
       id: 12,
       author: "Robin",
-      role: "Friend",
+      role: "Best Friend",
       content:
         "Happy 40th my friend. You're one of my favorite people to be around. Continue to be the awesome person you are!",
+    },
+    {
+      id: 13,
+      author: "Jake",
+      role: "Rave Fam",
+      content:
+        "I still think your name should be pronounced herick and not erick. Also I'm never doing your mushrooms again ♥️♥️♥️♥️♥️",
+    },
+    {
+      id: 14,
+      author: "Bri",
+      role: "Ratchet Roomie",
+      content:
+        "Every time I am with you I laugh till I cry. Our memories go way back to our fort Bragg days & being roommates hosting crazy ass house parties. We had 2 solid years of constant hangouts before both moving across the country to different states & we still managed to talk all the time & continue our friendship. I am thankful for our friendship everyday even when we are roasting each other till one of us actually gets butt hurt lmao. Happy 40th birthday peepaw. That's you're new nickname now since you're actually kinda old LOL Love you till infinity my friend.",
     },
   ];
 
@@ -198,6 +213,16 @@ export function LogbookSection() {
       imageUrl: malMemory,
       fullStory:
         "Herik- my mf brother! I appreciate you for showing up for me when I was rebuilding my life back home in Mass. I'll never forget my 24th birthday when we went to Mau P and we were basically strangers. From there our rave extravaganza took off and that meant more to me than you'll ever know. I appreciate every laugh, dance, smoke, and good time with you and the rave fam we built. Couldn't be more happy to celebrate you and every show/festival together makes my heart so happy. Thank you for being a great friend and support system for me in some of my darker times. You are a light and I appreciate you so much!!! Happy 40th birthday to my dawg! Hope this year brings you blessings you didn't think possible. Cheers to much more head banging and being a bass goblin with ya 🫶🏼😎",
+    },
+    {
+      id: 10,
+      title: "Lost Puppy",
+      date: "EDC Orlando 2014",
+      content:
+        "I have so many great memories with you E but one of my favorites is when we lost you at our first ever EDC Orlando in 2014 & as we all walked out we just saw you waiting in the lost & found like a little lost puppy.",
+      imageUrl: briMemory,
+      fullStory:
+        "I have so many great memories with you E but one of my favorites is when we lost you at our first ever EDC Orlando in 2014 & as we all walked out we just saw you waiting in the lost & found like a little lost puppy. Lmao you have always been a free spirit doing your own thing meeting new people & bringing us all together. Never change E. You are one of the best friends I have in my life. Too bad you're getting old you'll be needing your diapers changed soon. Yikes. Lmao love you E, ohana forever.",
     },
   ];
 
