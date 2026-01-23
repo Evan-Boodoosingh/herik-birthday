@@ -7,14 +7,48 @@ import { TreasureReveal } from "./components/TreasureReveal";
 import { BirthdayBanner } from "./components/BirthdayBanner";
 import { FloatingParticles, NavCompass } from "./components/OnePieceElements";
 import { UnifiedNav } from "./components/UnifiedNav";
+import { MusicPlayer } from "./components/MusicPlayer";
 
 export default function App() {
   const { scrollYProgress } = useScroll();
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  // Monitor for modals opening/closing
+  useEffect(() => {
+    const checkForModals = () => {
+      // Check if body has overflow hidden AND fixed position (ImageModal sets both)
+      const bodyLocked =
+        document.body.style.overflow === "hidden" &&
+        document.body.style.position === "fixed";
+
+      // Check for Radix Dialog overlay (memory modals)
+      const hasDialogOverlay = !!document.querySelector(
+        '[data-slot="dialog-overlay"]',
+      );
+
+      const modalOpen = bodyLocked || hasDialogOverlay;
+      setIsModalOpen(modalOpen);
+    };
+
+    // Use MutationObserver for immediate updates
+    const observer = new MutationObserver(checkForModals);
+    observer.observe(document.body, {
+      childList: true,
+      subtree: true,
+      attributes: true,
+      attributeFilter: ["style"],
+    });
+
+    return () => observer.disconnect();
+  }, []);
 
   return (
     <div className="min-h-screen bg-[#2d1810] text-white overflow-x-hidden">
       {/* Navigation */}
       <UnifiedNav />
+
+      {/* Music Player */}
+      <MusicPlayer hideButton={isModalOpen} />
 
       {/* Parchment texture overlay */}
       <div className="fixed inset-0 opacity-30 pointer-events-none mix-blend-multiply">

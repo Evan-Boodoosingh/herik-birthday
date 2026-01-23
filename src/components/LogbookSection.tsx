@@ -18,6 +18,8 @@ import manfredoMemory from "../assets/manfredo-memory.jpeg";
 import saraMemory from "../assets/sara-memory.JPG";
 import malMemory from "../assets/mal-memory.JPG";
 import briMemory from "../assets/bri-memory.jpeg";
+import cesarMemory from "../assets/ceaser-memory.jpg";
+import alisaMemory from "../assets/alisa-memory.jpg";
 
 export function LogbookSection() {
   const [selectedStory, setSelectedStory] = React.useState<number | null>(null);
@@ -121,6 +123,13 @@ export function LogbookSection() {
       content:
         "Every time I am with you I laugh till I cry. Our memories go way back to our fort Bragg days & being roommates hosting crazy ass house parties. We had 2 solid years of constant hangouts before both moving across the country to different states & we still managed to talk all the time & continue our friendship. I am thankful for our friendship everyday even when we are roasting each other till one of us actually gets butt hurt lmao. Happy 40th birthday peepaw. That's you're new nickname now since you're actually kinda old LOL Love you till infinity my friend.",
     },
+    {
+      id: 15,
+      author: "Alisa",
+      role: "Friend",
+      content:
+        "How do you put a friendship like Herik's into words? This man is the glue! From the very beginning, he brought everyone together. And has continued to bring our family together for many years. I'm thankful to finally celebrate a birthday together! And hope we get to celebrate many many more. Herik has always told me that if he stopped being mean to me, that's when I could know we were no longer friends. So I think it goes without saying that I tolerate his bullying and teasing. Because I have nothing but love for the man! And of course, I dish it right back. Cause I know at the end of the day- he is just trying to make you better! Thank you, Herik, for always being there for a good time, listening to me when I'm down, making me laugh, and trying to always make me better. You've taught me that no matter what happens in my life, I can remind myself that at least I'm not dead, it could be so much worse… Love you, Herik. Happy 40th!",
+    },
   ];
 
   const stories = [
@@ -223,6 +232,26 @@ export function LogbookSection() {
       imageUrl: briMemory,
       fullStory:
         "I have so many great memories with you E but one of my favorites is when we lost you at our first ever EDC Orlando in 2014 & as we all walked out we just saw you waiting in the lost & found like a little lost puppy. Lmao you have always been a free spirit doing your own thing meeting new people & bringing us all together. Never change E. You are one of the best friends I have in my life. Too bad you're getting old you'll be needing your diapers changed soon. Yikes. Lmao love you E, ohana forever.",
+    },
+    {
+      id: 11,
+      title: "Solo Adventure",
+      date: "Various Adventures",
+      content:
+        "I would say don't ever change but it's too late for that cause you're already old. It's fine though cause in the end there's no one else I'd rather solo adventure with than you (besides Alissa).",
+      imageUrl: cesarMemory,
+      fullStory:
+        "I would say don't ever change but it's too late for that cause you're already old. It's fine though cause in the end there's no one else I'd rather solo adventure with than you (besides Alissa). You're one of my best friends and you've seen parts of me that no one else has ever seen (Please knock next time). Watch out for cars on the side of the road and scooters on the sidewalk cause I'm tryna spend as many birthdays with you as I can. Hope you have a Happy Birthday Herik. May we continue to celebrate many more together. Love you bud.",
+    },
+    {
+      id: 12,
+      title: "EDCLV 2024 Lessons",
+      date: "EDC Las Vegas 2024",
+      content:
+        "Cesar and I planned to go to EDCLV in 2024 with Micaela and we got VIP just to end up hanging out with Herik in GA the whole time… lol",
+      imageUrl: alisaMemory,
+      fullStory:
+        "Cesar and I planned to go to EDCLV in 2024 with Micaela and we got VIP just to end up hanging out with Herik in GA the whole time… lol\n\nThis was one of my favorite experiences because we got to spend so much time together and he taught me so much- it being one of the first few festivals I went to. He taught me the importance of setting plans before you get in there, making a meet up spot and times and keeping it the same every day, sending messages as texts with a time stamp. And so many lessons that I have carried with me to so many festivals after that. Lessons I have been able to share with other friends who are learning how to rave.\n\nWe had so many good laughs and tears at that festival. Surprise Fred Again set with Aux and Nick. Surprise Mike and Lisa (I literally cried..) And Herik getting the worst muscle cramps in his calves because he laid down after Cesar tried to stop him… he said we had to carry him to Med Tent and then carry him up those damn bleachers to get out of the festival. We didn't know what Med Tent would do besides give him some ibuprofen but luckily someone had icy hot patches. Within 30 minutes, he was literally JUMPING around at the sunrise set clearly all better, icy hot patches on both knees…",
     },
   ];
 

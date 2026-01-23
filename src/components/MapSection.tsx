@@ -52,6 +52,8 @@ import subtronics2023 from "../assets/subtronics-2023.jpg";
 import november2023 from "../assets/november-2023.jpeg";
 import latinNight2023 from "../assets/Latin–night–May-2023.png";
 import aprilTapeB2024 from "../assets/april-2024-TapeB.jpg";
+import jan2024 from "../assets/jan-2024.jpg";
+import june2024 from "../assets/june-2024.jpg";
 import edco2025 from "../assets/edco-2025.jpeg";
 
 interface Milestone {
@@ -127,6 +129,12 @@ export function MapSection() {
       title: "June 2013",
       description: "Good times with friends.",
       imageUrl: june2013,
+    },
+    {
+      year: "2013",
+      title: "November 2013",
+      description: "Late fall memories with the crew.",
+      imageUrl: november2023,
     },
     {
       year: "2014",
@@ -274,10 +282,10 @@ export function MapSection() {
       imageUrl: subtronics2023,
     },
     {
-      year: "2023",
-      title: "November 2023",
-      description: "Late fall memories with the crew.",
-      imageUrl: november2023,
+      year: "2024",
+      title: "January 2024",
+      description: "Starting the new year with the crew.",
+      imageUrl: jan2024,
     },
     {
       year: "2024",
@@ -290,6 +298,12 @@ export function MapSection() {
       title: "April - Tape B",
       description: "Spring festival memories.",
       imageUrl: aprilTapeB2024,
+    },
+    {
+      year: "2024",
+      title: "June 2024",
+      description: "Summer vibes and good times.",
+      imageUrl: june2024,
     },
     {
       year: "2024",
